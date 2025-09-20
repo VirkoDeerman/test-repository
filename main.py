@@ -1,6 +1,3 @@
-from random import choice
-print(choice([
-	'Hi!\nWhat can I do for you?',
-	'Hello.\nHow may I help?',
-	'...\nTell me what to do.'
-]))
+def is_palindrome() -> bool:
+	usput: str = input('Enter a single word:\n> ').split()[0].lower()
+	return usput[::len(usput)] == usput
