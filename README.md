@@ -1,2 +1,2 @@
 # test-repository
-herro everynyan ye ye ye
+I just started to work with git, and it's my first repository.
