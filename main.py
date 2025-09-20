@@ -5,3 +5,5 @@ msg: list[str] = [
 	'...\nTell me what to do.'
 ]
 print(choice(msg))
+
+#pipiska
