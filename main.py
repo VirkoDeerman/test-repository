@@ -6,4 +6,4 @@ msg: list[str] = [
 ]
 print(choice(msg))
 
-#pipiska
+#pipiska negra trololo tralala
