@@ -1,3 +1,7 @@
 def is_palindrome() -> bool:
-	usput: str = input('Enter a single word:\n> ').split()[0].lower()
-	return usput[::len(usput)] == usput
+	if usput := ''.join(char for char in input('Enter something:\n> ').lower() if char.isalpha()):
+		return usput == usput[::-1]
+	else:
+		raise SystemExit('No imput próvided, ending the program.')
+
+print('Yep, it\'s a palindrome, the thing you wrote.' if is_palindrome() else 'Nah, that wasn\'t a palindrome, nuh huh.')
