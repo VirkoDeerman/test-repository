@@ -1,8 +1,13 @@
-def is_palindrome() -> bool:
-	if usput := ''.join(char for char in input('\nEnter something:\n> ').lower() if char.isalpha()):
+def is_palindrome() -> bool | None:
+	if usput := ''.join(char for char in input('\nEnter literally anything:\n> ').lower() if char.isalpha()):
 		return usput == usput[::-1]
 	else:
-		raise SystemExit('No imput provided, ending the program.')
+		raise ValueError
+
 while True:
-	print('Yep, it\'s a palindrome, the thing you wrote.' if is_palindrome() else 'Nah, that wasn\'t a palindrome, nuh huh.'):
-	pass
+	try:
+		print('\nYep, it\'s a palindrome, the thing you wrote.' if is_palindrome() else '\nNah, that wasn\'t a palindrome, nuh huh.')
+	except ValueError:
+		usput: str = input('\nConfirm exit\n> ').strip().lower()
+		if not usput if not usput else usput[0] in 'ye':
+			break
