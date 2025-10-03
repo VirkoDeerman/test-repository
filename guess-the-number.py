@@ -12,7 +12,7 @@ while True:
                 continue
 
             if usput == goal:
-                print('\nCongratulations! You won!\nGenerating new number...\n\nThe new goal is set. Try to guess it too!')
+                print('\nCongratulations! You won!\nGenerating new number...\n\nNew number generated. Try to guess it too!')
                 break
             else:
                 print(f'\nKEEP. GAMBLING.\nThe number is {'lower' if usput > goal else 'bigger'}.')
@@ -20,3 +20,4 @@ while True:
             usput = input('\nConfirm exit\n> ')
             if not usput if not usput else usput[0] in 'ye':
                 raise SystemExit
+            print()
