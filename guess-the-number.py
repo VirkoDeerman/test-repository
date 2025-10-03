@@ -17,7 +17,7 @@ while True:
             else:
                 print(f'\nKEEP. GAMBLING.\nThe number is {'lower' if usput > goal else 'bigger'}.')
         else:
-            usput = input('\nConfirm exit\n> ')
+            usput = input('\nConfirm exit\n> ').strip().lower()
             if not usput if not usput else usput[0] in 'ye':
                 raise SystemExit
-            print()
+            print('\nCancelling exit...\nOk, continue guessing.')
