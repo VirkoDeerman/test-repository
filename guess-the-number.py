@@ -8,7 +8,7 @@ while True:
             try:
                 usput = int(usput)
             except ValueError:
-                print('\nHey! You didn\'t enter a number! Try again.')
+                print('\nHey! You didn\'t enter a number!\nTry again.')
                 continue
 
             if usput == goal:

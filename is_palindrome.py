@@ -3,5 +3,5 @@ def is_palindrome() -> bool:
 		return usput == usput[::-1]
 	else:
 		raise SystemExit('No imput provided, ending the program.')
-
-print('Yep, it\'s a palindrome, the thing you wrote.' if is_palindrome() else 'Nah, that wasn\'t a palindrome, nuh huh.')
+while not input('Yep, it\'s a palindrome, the thing you wrote.' if is_palindrome() else 'Nah, that wasn\'t a palindrome, nuh huh.'):
+	pass
